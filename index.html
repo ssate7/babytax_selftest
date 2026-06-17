@@ -438,6 +438,37 @@
       border-radius: 10px;
       font-weight: 500;
     }
+    .doc-links {
+      display: flex;
+      gap: 5px;
+      margin-top: 4px;
+    }
+    .doc-link {
+      font-size: 11.5px;
+      padding: 2px 8px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 500;
+      background: var(--green-light);
+      color: var(--green-dark);
+      border: 1px solid var(--border);
+      transition: all 0.15s;
+    }
+    .doc-link:hover {
+      background: var(--green-mid);
+      color: var(--white);
+      border-color: var(--green-mid);
+    }
+    .doc-link-ex {
+      background: #fff9e6;
+      color: #7a5f00;
+      border-color: #f0e0a0;
+    }
+    .doc-link-ex:hover {
+      background: var(--accent);
+      color: var(--white);
+      border-color: var(--accent);
+    }
 
     /* 문의처 */
     .contact-row {
@@ -744,14 +775,43 @@
         <div class="info-block">
           <div class="info-block-title">
             <span class="info-icon">◼</span> 구비서류
+            <span style="margin-left:auto; font-size:11px; font-weight:400; opacity:0.8;">📎 클릭 시 서식 다운로드</span>
           </div>
           <div class="doc-list">
-            <div class="doc-item"><span class="doc-num">①</span> 지방세 감면신청서</div>
-            <div class="doc-item"><span class="doc-num">②</span> 지방세 경정청구서</div>
-            <div class="doc-item"><span class="doc-num">③</span> 가족관계증명서(상세)</div>
-            <div class="doc-item"><span class="doc-num">④</span> 주민등록등본 및 초본</div>
-            <div class="doc-item"><span class="doc-num">⑤</span> (환급받을) 통장 사본</div>
-            <div class="doc-item"><span class="doc-num">⑥</span> 지방세환급금 양도 요구서<br><span style="font-size:11.5px;color:#999;">(공동명의 시 필요)</span></div>
+            <div class="doc-item">
+              <span class="doc-num">①</span>
+              <div>
+                지방세 감면신청서
+                <div class="doc-links">
+                  <a href="https://github.com/user-attachments/files/29033768/default.pdf" target="_blank" class="doc-link">📄 서식</a>
+                  <a href="https://github.com/user-attachments/files/29033764/default.pdf" target="_blank" class="doc-link doc-link-ex">✏️ 작성예시</a>
+                </div>
+              </div>
+            </div>
+            <div class="doc-item">
+              <span class="doc-num">②</span>
+              <div>
+                지방세 경정청구서
+                <div class="doc-links">
+                  <a href="https://github.com/user-attachments/files/29033765/default.pdf" target="_blank" class="doc-link">📄 서식</a>
+                  <a href="https://github.com/user-attachments/files/29033767/default.pdf" target="_blank" class="doc-link doc-link-ex">✏️ 작성예시</a>
+                </div>
+              </div>
+            </div>
+            <div class="doc-item">
+              <span class="doc-num">③</span>
+              <div>
+                지방세환급금 양도 요구서
+                <div class="doc-links">
+                  <a href="https://github.com/user-attachments/files/29033769/default.pdf" target="_blank" class="doc-link">📄 서식</a>
+                  <a href="https://github.com/user-attachments/files/29033766/default.pdf" target="_blank" class="doc-link doc-link-ex">✏️ 작성예시</a>
+                </div>
+                <span style="font-size:11.5px;color:#999;">(공동명의 시 필요)</span>
+              </div>
+            </div>
+            <div class="doc-item"><span class="doc-num">④</span> 가족관계증명서(상세)</div>
+            <div class="doc-item"><span class="doc-num">⑤</span> 주민등록등본 및 초본</div>
+            <div class="doc-item"><span class="doc-num">⑥</span> (환급받을) 통장 사본</div>
             <div class="doc-item"><span class="doc-num">⑦</span> 신분증 사본<br><span style="font-size:11.5px;color:#999;">(공동명의 시 각각 필요)</span></div>
           </div>
         </div>
